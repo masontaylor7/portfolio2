@@ -13,7 +13,7 @@ const NavBar = () => {
 
                 <div className='name-wrapper'>
                     <h1 className='my-name'>Mason Evan Taylor</h1>
-                    <h2 className='title'>Software Engineer</h2>
+                    <h2 className='title'>Software Engineer | Full Stack Developer</h2>
                 </div>
             </div>
 

@@ -1,0 +1,16 @@
+.dot:hover {
+    color: #e63946;
+}
+
+.active {
+    font-size: 65px;
+    color: #fdc237;
+}
+
+.arrow-select {
+    transition: color 0.10s ease-in-out;
+}
+
+.arrow-select:hover {
+    color: #a8dadc;
+}

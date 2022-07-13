@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Slider.css'
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi'
+import { BsDot } from 'react-icons/bs'
 
 
 const Slider = ({ slides }) => {
@@ -21,7 +22,7 @@ const Slider = ({ slides }) => {
 
     const leftArrowStyles = {
         position: 'absolute',
-        left: '32px',
+        left: '30%',
         fontSize: '30px',
         zIndex: '2',
         cursor: 'pointer'
@@ -29,10 +30,32 @@ const Slider = ({ slides }) => {
 
     const rightArrowStyles = {
         position: 'absolute',
-        right: '32px',
+        right: '30%',
         fontSize: '30px',
         zIndex: '2',
         cursor: 'pointer'
+    }
+
+    const dotStyles = {
+        fontSize: '30px',
+        cursor: 'pointer',
+        padding: '0',
+        borderRadius: '25%',
+        background: 'none'
+    }
+
+    const dotBlock = {
+        width: '200px',
+        display: 'flex',
+        justifyContent: 'space-evenly'
+    }
+
+    const arrowBlock = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '20px',
+
     }
 
     const goToPrevious = () => {
@@ -47,13 +70,24 @@ const Slider = ({ slides }) => {
         setCurrIndex(newIndex)
     }
 
+    const goToSlide = (index) => {
+        setCurrIndex(index)
+    }
+
 
     return (
         <div style={sliderStyles}>
             <img style={slideStyles} src={slides[currIndex]} />
-            <div>
-            <div style={leftArrowStyles} onClick={goToPrevious}><BiLeftArrow /></div>
-            <div style={rightArrowStyles} onClick={goToNext}><BiRightArrow /></div>
+            <div style={arrowBlock}>
+                <div className='arrow-select' style={leftArrowStyles} onClick={goToPrevious}><BiLeftArrow /></div>
+                <div style={dotBlock}>
+                    {slides.map((slide, slideIndex) => (
+                        <div>
+                            <BsDot className={slideIndex === currIndex ? 'dot active' : 'dot'} key={slideIndex} style={dotStyles} onClick={() => goToSlide(slideIndex) } />
+                        </div>
+                    ))}
+                </div>
+                <div className='arrow-select' style={rightArrowStyles} onClick={goToNext}><BiRightArrow /></div>
             </div>
         </div>
     );

@@ -11,19 +11,27 @@ import indirecipeimg from '../../images/individual-recipe.jpg'
 import updaterecipeimg from '../../images/recipe-update.jpg'
 
 
-import fitnessimg from '../../images/fitness-overflow-post.jpg'
 import flixtagramimg from '../../images/login.JPG'
+import homepageflix from '../../images/homepage-flix.jpg'
+import profileflix from '../../images/profile-flix.jpg'
+import uploadflix from '../../images/upload-flix.jpg'
+
+
+import fitnessimg from '../../images/fitness-overflow-post.jpg'
 
 const ProjectsComp = () => {
     const alacarteSlides = [
         alacarteimg,
         newrecipeimg,
         indirecipeimg,
-        updaterecipeimg
+        updaterecipeimg,
     ]
 
     const flixtagramSlides = [
-        flixtagramimg
+        flixtagramimg,
+        homepageflix,
+        profileflix,
+        uploadflix
     ]
 
     const fitnessSlides = [
@@ -33,7 +41,7 @@ const ProjectsComp = () => {
     const containerStyles = {
         border: '1px solid black',
         maxWidth: '800px',
-        maxHeight: '400px',
+        height: '500px',
     }
 
     return (
@@ -51,7 +59,8 @@ const ProjectsComp = () => {
                     </div>
                     <div className='project-info'>
                         <h1 className='project-name'>Alacarte</h1>
-                        <div className='project-techs'>[ React.js, Redux, Python, Flask, SQLAlchemy, AWS, HTML5, CSS3 ]</div>
+                        <h3 className='project-techs'>[ React.js, Redux, Python, Flask, SQLAlchemy, AWS, HTML5, CSS3 ]</h3>
+                        <div className='project-description'>Alacarte is a food lovers dream. Jam-packed with delicious recipes and new inspirations, you'll find your new favorites in no time! Users are able to add their own recipes to Alacarte, and save their favorite recipes to personal and customizable collections. </div>
                     </div>
                 </div>
 
@@ -62,7 +71,7 @@ const ProjectsComp = () => {
                     </div>
                     <div className='project-info'>
                         <h1 className='project-name'>Flixtagram</h1>
-                        <div className='project-techs'>[ React.js, Redux, Python, Flask, PostgreSQL, AWS, HTML5, CSS3 ]</div>
+                        <h3 className='project-techs'>[ React.js, Redux, Python, Flask, PostgreSQL, AWS, HTML5, CSS3 ]</h3>
                     </div>
                 </div>
 
@@ -72,7 +81,7 @@ const ProjectsComp = () => {
                     </div>
                     <div className='project-info'>
                         <h1 className='project-name'>Fitness-Overflow</h1>
-                        <div className='project-techs'>[ Javascript, Express, PostgreSQL, HTML, CSS3, Pug ]</div>
+                        <h3 className='project-techs'>[ Javascript, Express, PostgreSQL, HTML, CSS3, Pug ]</h3>
                     </div>
                 </div>
 
