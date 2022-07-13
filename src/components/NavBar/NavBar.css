@@ -1,5 +1,5 @@
 .nav-bar {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -8,15 +8,22 @@
     right: 0;
     width: 100%;
     height: 600px;
+    overflow: hidden;
 }
 
 .nav-top {
     display: flex;
+    background-color: #44344F;
 }
 
 .name-wrapper {
-    position: relative;
+    /* position: relative; */
     width: 80%;
+}
+
+.title {
+    color: white;
+    margin-left: 15%;
 }
 
 
@@ -28,72 +35,45 @@
 }
 
 .light {
-    background-color: #C2F970;
     color: #44344F;
-    border-bottom: 3px solid #44344F;
+    border-bottom: 3px solid #ee9b00;
 }
 
 .my-name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 60px;
-}
-
-.night-mode-button {
-    box-sizing: border-box;
-    height: 75px;
-    width: 75px;
-    margin-right: 20%;
-    background: none;
-    border: 3px solid;
-    border-top: none;
-    border-radius: 0px 0px 10px 10px;
-    border-color: #44344F;
-}
-
-.button-night {
-    border-color: white;
-}
-
-.night-mode-icon {
-    height: 40px;
-    width: 40px;
-}
-
-.sun {
+    width: 100%;
     color: white;
 }
 
-.moon {
-    color: #44344F
-}
 
 .profile-img {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     border-radius: 50%;
-    box-shadow: 30px 30px 1px red, -30px -30px 1px rgb(0, 170, 255);
+    box-shadow: -30px 30px 1px #e63946, 30px -30px 1px #a8dadc;
     margin-top: -20px;
 }
 
-/* .profile-img-shadow {
-    position: absolute;
-    background-color: red;
-    height: 400px;
-    width: 400px;
-    left: 0px;
-    top: 10px;
-    z-index: 2;
-
-} */
 
 .about-block {
     display: flex;
     justify-content: space-between;
+    margin-right: 15%;
+    background-color: white;
+
+}
+
+.text-block {
     margin-left: 15%;
-    margin-right: 20%;
-    /* width: 100%; */
+}
+
+.welcome-text {
+    color: #e63946;
 }
 
 .about-me-section {
@@ -104,4 +84,5 @@
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    color: #44344F;
 }
