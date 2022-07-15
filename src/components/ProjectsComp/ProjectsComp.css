@@ -11,12 +11,12 @@
     align-items: center;
     justify-content: center;
     top: 0;
-    height: 100px;
+    height: 150px;
     background-color: #14213D;
     border-bottom: 3px solid #e63946;
     border-top: 3px solid #a8dadc;
-    padding-left: 15%;
-    padding-right: 20%;
+    /* padding-left: 15%;
+    padding-right: 20%; */
 }
 
 .projects-title {
@@ -51,8 +51,9 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 80px;
+    padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 1px solid #14213D;
+    border-top: 1px solid #14213D;
 }
 
 .image-style{
@@ -124,19 +125,19 @@
 }
 
 .link-button:hover {
-    color: #a8dadc;
-    border: 1.5px solid #a8dadc;
-}
-
-.link-button:hover .github-project-icon{
-    color: #a8dadc;
-}
-
-.link-button:active {
     color: #fdc237;
     border: 1.5px solid #fdc237;
 }
 
-.link-button:active .github-project-icon {
+.link-button:hover .github-project-icon{
     color: #fdc237;
+}
+
+.link-button:active {
+    color: #a8dadc;
+    border: 1.5px solid #a8dadc;
+}
+
+.link-button:active .github-project-icon {
+    color: #a8dadc;
 }

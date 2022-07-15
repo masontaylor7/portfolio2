@@ -1,9 +1,9 @@
 .dot:hover {
-    color: #a8dadc;
+    color: #fdc237;
 }
 
 .dot:active {
-    color: #fdc237;
+    color: #a8dadc;
 }
 
 .active {
@@ -15,9 +15,9 @@
 }
 
 .arrow-select:hover {
-    color: #a8dadc;
+    color:  #fdc237;
 }
 
 .arrow-select:active {
-    color:  #fdc237;
+    color: #a8dadc;
 }
