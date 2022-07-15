@@ -82,7 +82,7 @@ const Slider = ({ slides }) => {
                 <div className='arrow-select' style={leftArrowStyles} onClick={goToPrevious}><BiLeftArrow /></div>
                 <div style={dotBlock}>
                     {slides.map((slide, slideIndex) => (
-                        <div>
+                        <div key={slideIndex}>
                             <BsDot className={slideIndex === currIndex ? 'dot active' : 'dot'} key={slideIndex} style={dotStyles} onClick={() => goToSlide(slideIndex) } />
                         </div>
                     ))}

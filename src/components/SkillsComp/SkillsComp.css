@@ -1,0 +1,141 @@
+.skills-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------- */
+
+
+.skills-title-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    height: 100px;
+    background-color: #14213D;
+    border-bottom: 3px solid #e63946;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+
+.skills-title {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.skills-icon {
+    color: white;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+/* ---------------------------- */
+
+
+.tech-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tech-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* height: 300px; */
+}
+
+.view-port {
+    width: fit-content;
+    /* height: 300px; */
+    /* overflow: hidden; */
+}
+
+.solo-tech-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+.tc1 {
+    color: #14213D;
+    background-color: #A8DADC;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+}
+.tc2 {
+    color: #14213D;
+    background-color: #ADCED0;
+}
+.tc3 {
+    color: #14213D;
+    background-color: #B2C1C5;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+}
+.tc4 {
+    color: #14213D;
+    background-color: #B6B5B9;
+}
+.tc5 {
+    color: #14213D;
+    background-color: #BBA8AE;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+
+}
+.tc6 {
+    color: #14213D;
+    background-color: #C09CA2;
+}
+.tc7 {
+    color: #14213D;
+    background-color: #C59097;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+}
+.tc8 {
+    color: #14213D;
+    background-color: #C9838B;
+}
+.tc9 {
+    color: #14213D;
+    background-color: #CE7780;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+}
+.tc10 {
+    color: #14213D;
+    background-color: #D36B74;
+}
+.tc11 {
+    color: #14213D;
+    background-color: #D85E69;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+}
+.tc12 {
+    color: #14213D;
+    background-color: #DC525D;
+}
+.tc13 {
+    color: #14213D;
+    background-color: #E14552;
+    box-shadow: 0px 0px 20px #14213d41;
+    z-index: 1;
+}
+.tc14 {
+    color: #14213D;
+    background-color: #E63946;
+}

@@ -10,6 +10,7 @@
     height: 600px;
     overflow: hidden;
     border-bottom: 3px solid #a8dadc;
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-top {
@@ -19,8 +20,56 @@
 }
 
 .name-wrapper {
-    /* position: relative; */
     width: 80%;
+}
+
+
+.nav-contact-links {
+    display: flex;
+    align-items: center;
+}
+
+.links-block {
+    display: flex;
+    margin-left: 40px;
+}
+
+.link-button-nav {
+    color: rgb(218, 218, 218);
+    transition: color 0.10s ease-in-out;
+}
+
+.link-button-nav:hover {
+    color: white;
+}
+
+.resume-popup {
+    display: flex;
+    align-items: center;
+}
+
+.resume-text {
+    color: white;
+    opacity: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.10s ease-in-out, opacity 0.10s ease-in-out;
+    pointer-events: none
+}
+
+.resume-icon {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.resume-icon:hover .resume-text {
+    transform: translate(60px, 0);
+    opacity: 1;
+
 }
 
 .title {
@@ -39,15 +88,14 @@
 
 .light {
     color: #14213d;
-
 }
 
 .my-name {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     margin-left: 15%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 60px;
     width: 100%;
     color: white;
@@ -68,9 +116,7 @@
     display: flex;
     justify-content: space-between;
     margin-right: 15%;
-    background-color: rgb(255, 255, 255);
-
-
+    background-color: rgb(255, 255, 255)
 }
 
 .text-block {

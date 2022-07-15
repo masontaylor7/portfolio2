@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './NavBar.css'
 import masonimg from '../../images/mason.jpg'
+import resumepdf from '../../PDFs/resume.pdf'
 
-import { BsSunFill } from 'react-icons/bs';
-import { GiMoon } from 'react-icons/gi'
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { SiAngellist } from 'react-icons/si'
+import { VscFilePdf } from "react-icons/vsc";
 
 const NavBar = () => {
+
+    const iconStyle = {
+        width: '35px',
+        height: '35px',
+        marginLeft: '30px'
+    }
 
     return (
         <div className='nav-bar light'>
@@ -13,7 +21,26 @@ const NavBar = () => {
 
                 <div className='name-wrapper'>
                     <h1 className='my-name'>Mason Evan Taylor</h1>
-                    <h2 className='title'>Software Engineer | Full Stack Developer</h2>
+                    <div className='nav-contact-links'>
+
+                        <h2 className='title'>Software Engineer | Full Stack Developer</h2>
+
+                        <div className='links-block'>
+                            <a className='link-button-nav' target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/mtaylor77/'><BsLinkedin style={iconStyle} /></a>
+
+                            <a className='link-button-nav' target="_blank" rel="noreferrer" href='https://github.com/masontaylor7'><BsGithub style={iconStyle} /></a>
+
+                            <a className='link-button-nav' target="_blank" rel="noreferrer" href='https://ala-carte.herokuapp.com/'><SiAngellist style={iconStyle} /></a>
+
+                            <div className='resume-popup'>
+                                <a className='link-button-nav resume-icon' target="_blank" rel="noreferrer" href={resumepdf}>
+                                    <VscFilePdf style={iconStyle} />
+                                    <h3 className='resume-text'>Resume</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 

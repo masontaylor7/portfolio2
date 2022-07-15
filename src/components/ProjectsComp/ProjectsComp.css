@@ -12,8 +12,9 @@
     justify-content: center;
     top: 0;
     height: 100px;
-    background-color: #14213d;
-    /* border: 1px solid red; */
+    background-color: #14213D;
+    border-bottom: 3px solid #e63946;
+    border-top: 3px solid #a8dadc;
     padding-left: 15%;
     padding-right: 20%;
 }
@@ -38,7 +39,12 @@
 
 /* ------------------------------------------ */
 
-
+.projects-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
 
 .project-wrapper {
     display: flex;
@@ -46,7 +52,7 @@
     margin-right: 10%;
     margin-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #14213D;
 }
 
 .image-style{
@@ -60,6 +66,12 @@
 
 /* ------ */
 
+.project-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .project-info {
     display: flex;
     flex-direction: column;
@@ -70,15 +82,61 @@
 .project-name {
     margin-top: 0;
     margin-bottom: 0px;
+    color: #14213D;
 }
 
 .project-techs {
     font-size: 15px;
     font-weight: 700;
+    color: #14213D;
 }
 
 .project-description {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    color: #14213D;
+}
+
+/* ------------------------ */
+
+.link-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1.5px solid #14213d;
+    color: #14213D;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    transition: color 0.10s ease-in-out, border 0.10s ease-in-out;
+}
+
+.github-project-icon {
+    color: #14213D;
+    transition: color 0.10s ease-in-out;
+}
+
+.link-button:hover {
+    color: #a8dadc;
+    border: 1.5px solid #a8dadc;
+}
+
+.link-button:hover .github-project-icon{
+    color: #a8dadc;
+}
+
+.link-button:active {
+    color: #fdc237;
+    border: 1.5px solid #fdc237;
+}
+
+.link-button:active .github-project-icon {
+    color: #fdc237;
 }
